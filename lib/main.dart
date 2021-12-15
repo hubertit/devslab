@@ -1,9 +1,10 @@
-import 'package:devslab/screens/account_screen.dart';
-import 'package:devslab/screens/blog_screen.dart';
-import 'package:devslab/screens/home_screen.dart';
-import 'package:devslab/screens/login_screen.dart';
-import 'package:devslab/screens/shop_screen.dart';
+import 'package:devslab_2/screens/account_screen.dart';
+import 'package:devslab_2/screens/blog_screen.dart';
+import 'package:devslab_2/screens/home_screen.dart';
+import 'package:devslab_2/screens/login_screen.dart';
+import 'package:devslab_2/screens/shop_screen.dart';
 import 'package:flutter/material.dart';
+import 'models/user.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
       ),
       home: const LoginScreen(),
     );
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, this.title}) : super(key: key);
+  const MyHomePage({Key? key,required this.user}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -46,7 +47,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  final String? title;
+  final User user;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -65,17 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title??""),
-      ),
       body: IndexedStack(
-        children: const [
+        children: [
           HomeScreen(),
           BlogScreen(),
           ShopScreen(),
-          AccountScreen(),
+          AccountScreen(user: widget.user,),
         ],
         index: index,
       ),
