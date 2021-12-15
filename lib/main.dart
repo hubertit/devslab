@@ -1,8 +1,8 @@
-import 'package:devslab_2/screens/account_screen.dart';
-import 'package:devslab_2/screens/blog_screen.dart';
-import 'package:devslab_2/screens/home_screen.dart';
-import 'package:devslab_2/screens/login_screen.dart';
-import 'package:devslab_2/screens/shop_screen.dart';
+import 'package:devslab/screens/account_screen.dart';
+import 'package:devslab/screens/blog_screen.dart';
+import 'package:devslab/screens/home_screen.dart';
+import 'package:devslab/screens/login_screen.dart';
+import 'package:devslab/screens/shop_screen.dart';
 import 'package:flutter/material.dart';
 import 'models/user.dart';
 

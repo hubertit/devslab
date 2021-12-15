@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:devslab_2/base_class.dart';
-import 'package:devslab_2/models/user.dart';
+import 'package:devslab/base_class.dart';
+import 'package:devslab/models/user.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

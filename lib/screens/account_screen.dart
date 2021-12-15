@@ -1,5 +1,5 @@
-import 'package:devslab_2/models/user.dart';
-import 'package:devslab_2/screens/login_screen.dart';
+import 'package:devslab/models/user.dart';
+import 'package:devslab/screens/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';

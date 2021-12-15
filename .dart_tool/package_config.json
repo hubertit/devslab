@@ -278,13 +278,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "devslab_2",
+      "name": "devslab",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-12-15T07:35:52.567529Z",
+  "generated": "2021-12-15T07:38:08.477214Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }

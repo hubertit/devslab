@@ -1,6 +1,6 @@
-import 'package:devslab_2/base_class.dart';
-import 'package:devslab_2/models/product.dart';
-import 'package:devslab_2/screens/product_details.dart';
+import 'package:devslab/base_class.dart';
+import 'package:devslab/models/product.dart';
+import 'package:devslab/screens/product_details.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
